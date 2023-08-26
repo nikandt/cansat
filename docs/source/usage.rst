@@ -1,12 +1,16 @@
 Usage
 =====
 
-.. _installation:
-.. _getting_started:
+.. _setup:
+.. _hardware_configuration:
+.. _example_scripts:
 
 
-Installation
+Setup
 ------------
 
-Getting Started
+Hardware Configuration
+----------------------
+
+Example Scripts
 ---------------
