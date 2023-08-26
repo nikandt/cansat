@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Cansat'
+project = 'cansat'
 copyright = '2023, Tessa Nikander'
 author = 'Tessa Nikander'
 
