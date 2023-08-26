@@ -14,6 +14,7 @@ Contents
 .. toctree::
 
    usage
+   getting_started
    api
 
 Cansat has its documentation hosted on Read the Docs.
