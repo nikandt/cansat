@@ -8,5 +8,5 @@ Usage
 Installation
 ------------
 
-Getting started
+Getting Started
 ---------------
