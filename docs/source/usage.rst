@@ -11,7 +11,8 @@ Usage
 Introduction
 ------------
 
-###What is a CanSat?
+What is Cansat?
+***************
 
 The CanSat is a simulated satellite - integrated within the volume and shape of a soft drink can.
 
@@ -24,17 +25,17 @@ achieving a safe landing, and analysing the collected data.
 Getting started
 ---------------
 
-###Required Software
+Required Software
+*****************
 
 * Arduino IDE: https://www.arduino.cc/en/software
-* ESP32 pack (available from Arduino IDE's board manager): https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
+* ESP32 pack (available from Arduino IDE's Boards Manager)
 * CanSat software: https://github.com/nikandt/cansat
 
-###Required hardware
+Required hardware
+*****************
 
 * A CanSat kit: https://holvi.com/shop/kitsat/section/satellites/
-	* A perf board
-	* A GPS Breakout Board
 
 
 Setup
@@ -49,7 +50,7 @@ Open Boards manager from Tools>Board>Board Manager. Type in "esp32" to the searc
 *Alternatively, you can install esp32 by Espressif Systems.*
 
 #. Step 2.
-Copy Cansat example scripts from https://github.com/nikandt/cansat/example_scripts to your PC.
+Copy Cansat example scripts from https://github.com/nikandt/cansat/example%20scripts to your PC.
 
 #. Step 4.
 Connect CanSat to your PC with a USB cable and open the led_blink/led_blink.ino script with Arduino IDE.
@@ -80,7 +81,8 @@ For creating custom breakouts, a board template reference:
 Example Scripts
 ---------------
 
-###Receiver example
+Receiver example
+****************
 
 .. code-block:: C++
 
@@ -114,4 +116,7 @@ Example Scripts
 
 	}
 
-For more examples, refer to https://github.com/nikandt/cansat/example_scripts
+For more examples, refer to https://github.com/nikandt/cansat/example%20scripts
+
+
+Trouble with setup? Leave us a message: support@kitsat.fi
