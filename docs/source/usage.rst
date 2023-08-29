@@ -35,7 +35,7 @@ Required Software
 * ESP32 pack (available from Arduino IDE's Boards Manager)
 * CanSat software: https://github.com/nikandt/cansat
 
-Required hardware
+Required Hardware
 *****************
 
 * A CanSat kit: https://holvi.com/shop/kitsat/section/satellites/
