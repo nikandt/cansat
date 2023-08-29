@@ -14,7 +14,7 @@ Introduction
 What is Cansat?
 ***************
 
-The CanSat is a simulated satellite - integrated within the volume and shape of a soft drink can.
+The CanSat is a simulated satellite — integrated within the volume and shape of a soft drink can.
 
 The challenge for students is to fit all the major subsystems found in a satellite,
 such as power, sensors and a communication system, into the volume and shape of a soft drink can.
@@ -41,24 +41,24 @@ Required hardware
 Setup
 -----
 
-#. Step 1.
+* Step 1.
 Download the required software (Arduino IDE): https://www.arduino.cc/en/software
 
-#. Step 2.
+* Step 2.
 Open Boards manager from Tools>Board>Board Manager. Type in "esp32" to the search. Install the latest ESP32 Boards package provided by Arduino.
 
 *Alternatively, you can install esp32 by Espressif Systems.*
 
-#. Step 2.
-Copy Cansat example scripts from https://github.com/nikandt/cansat/example%20scripts to your PC.
+* Step 2.
+Copy Cansat example scripts from https://github.com/nikandt/cansat/tree/main/example%20scripts to your PC.
 
-#. Step 4.
+* Step 4.
 Connect CanSat to your PC with a USB cable and open the led_blink/led_blink.ino script with Arduino IDE.
 
-#. Step 5.
+* Step 5.
 From the top pane of Arduino IDE, choose "Select Board". ESP32 device should show up.
 
-#. Step 6.
+* Step 6.
 From the top pane, click "Upload" to flash the example code to your Cansat. Your Cansat board LEDs should now be blinking.
 
 
@@ -116,7 +116,7 @@ Receiver example
 
 	}
 
-For more examples, refer to https://github.com/nikandt/cansat/example%20scripts
+For more examples, refer to https://github.com/nikandt/cansat/tree/main/example%20scripts
 
 
 Trouble with setup? Leave us a message: support@kitsat.fi
