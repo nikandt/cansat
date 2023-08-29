@@ -40,6 +40,8 @@ Required hardware
 .. image:: images/product.jpg
   :width: 400
   :alt: Cansat Kit
+  
+* A Cansat enclosing reference: https://github.com/nikandt/cansat/tree/main/mech
 
 
 Setup
@@ -47,8 +49,7 @@ Setup
 
 1. Download the required software (Arduino IDE): https://www.arduino.cc/en/software
 
-2. Open Boards manager from Tools>Board>Board Manager. Type in "esp32" to the search. Install the latest ESP32 Boards package provided by Arduino. 
-*Alternatively, you can install esp32 by Espressif Systems.*
+2. Open Boards manager from Tools>Board>Board Manager. Type in "esp32" to the search. Install the latest ESP32 Boards package provided by Arduino.
 
 3. Copy Cansat example scripts from https://github.com/nikandt/cansat/tree/main/example%20scripts to your PC.
 
