@@ -8,7 +8,7 @@ how to :ref:`setup` the project.
 
    This project is under active development.
    
-.. image:: images/drone.png
+.. image:: images/drone2.png
   :width: 700
   :alt: Cansat Kit Promo
 
