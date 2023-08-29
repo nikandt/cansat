@@ -37,6 +37,10 @@ Required hardware
 
 * A CanSat kit: https://holvi.com/shop/kitsat/section/satellites/
 
+.. image:: images/product.jpg
+  :width: 400
+  :alt: Cansat Kit
+
 
 Setup
 -----
