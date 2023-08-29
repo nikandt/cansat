@@ -7,6 +7,10 @@ Usage
 .. _hardware_reference:
 .. _example_scripts:
 
+.. image:: images/product2.jpg
+  :width: 400
+  :alt: Cansat Kit
+
 
 Introduction
 ------------
