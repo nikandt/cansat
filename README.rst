@@ -1,4 +1,4 @@
 Cansat
 ======
 
-&copy; Tessa Nikander, Samuli Nyman 2023
+© Tessa Nikander, Samuli Nyman 2023
