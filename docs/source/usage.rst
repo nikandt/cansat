@@ -1,9 +1,9 @@
 Usage
 =====
 
+.. _setup:
 .. _introduction:
 .. _getting_started:
-.. _setup:
 .. _hardware_reference:
 .. _example_scripts:
 
@@ -43,8 +43,6 @@ Required Hardware
 .. image:: images/product.jpg
   :width: 400
   :alt: Cansat Kit
-  
-* A Cansat enclosing reference: https://github.com/nikandt/cansat/tree/main/mech
 
 
 Setup
@@ -77,6 +75,9 @@ For creating custom breakouts, a board template reference:
 .. image:: images/template.png
   :width: 400
   :alt: Breakout board template
+  
+  
+For enclosures, a frame reference: https://github.com/nikandt/cansat/tree/main/mech
 
 
 Example Scripts
