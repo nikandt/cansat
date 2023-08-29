@@ -49,14 +49,14 @@ Open Boards manager from Tools>Board>Board Manager. Type in "esp32" to the searc
 
 *Alternatively, you can install esp32 by Espressif Systems.*
 
-* Step 2.
+* Step 3.
 Copy Cansat example scripts from https://github.com/nikandt/cansat/tree/main/example%20scripts to your PC.
 
 * Step 4.
-Connect CanSat to your PC with a USB cable and open the led_blink/led_blink.ino script with Arduino IDE.
+Connect CanSat to your PC with a USB cable and open the led_blink/led_blink.ino file from example scripts with Arduino IDE.
 
 * Step 5.
-From the top pane of Arduino IDE, choose "Select Board". ESP32 device should show up.
+From the top pane of Arduino IDE, choose "Select Board". Your Cansat should show up as an ESP32 device.
 
 * Step 6.
 From the top pane, click "Upload" to flash the example code to your Cansat. Your Cansat board LEDs should now be blinking.
