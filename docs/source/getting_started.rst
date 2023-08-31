@@ -1,7 +1,7 @@
+.. _getting_started:
+
 Getting started
 ===============
-
-.. _getting_started:
 
 .. image:: images/product2.jpg
   :width: 400

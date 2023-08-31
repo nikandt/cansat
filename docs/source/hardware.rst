@@ -1,6 +1,12 @@
 Hardware
 ========
 
+During development, the CanSat kit can be powered on with a USB Micro - Type A cable.
+
+During flight, an external power source must be used. Plug in three AAA alkaline batteries to the Cansat's bottom side.
+
+This is handled automatically.
+
 .. _pinout:
 
 Pinout
@@ -21,11 +27,11 @@ Pinout
    * - SDA
      - 2
      - SDA, I2C line
-     - Sensor suite
+     - Sensor Suite
    * - GPIO12
      - 3
      - Digital I/O
-     - Unallocated digital I/O
+     - Unallocated
    * - SCLK
      - 4
      - Clock select, SPI line
@@ -60,6 +66,34 @@ Pinout
      - 9
      - Ground, power line
      - Power
+   * - +3V3
+     - 10
+     - +3V3, power line
+     - Power
+   * - GPIO14
+     - 11
+     - Digital I/O
+     - Unallocated
+   * - GPIO25
+     - 12
+     - Digital I/O
+     - Unallocated
+   * - GPIO26
+     - 13
+     - Digital I/O
+     - Unallocated
+   * - GPIO27
+     - 14
+     - Digital I/O
+     - Unallocated
+   * - GPIO32
+     - 15
+     - Digital I/O
+     - Unallocated
+   * - GPIO33
+     - 16
+     - Digital I/O
+     - Unallocated
 
 .. _board_layout:
 
