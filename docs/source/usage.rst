@@ -39,7 +39,13 @@ Required Software
 Required Hardware
 *****************
 
-* A CanSat kit: https://holvi.com/shop/kitsat/section/satellites/
+* A CanSat kit: https://holvi.com/shop/kitsat/product/e5b4aa56d0a5ffb5cf3d7b421b7a58cf/
+
+The kit includes a CanSat, an antenna, and a ground segment radio for communication and data gathering.
+
+* (Optional): CanSat GPS Module: https://holvi.com/shop/kitsat/product/99579c7b559989fb4e61bc1e80f83e8b/
+
+* (Optional): CanSat Perf Board for custom payload development: https://holvi.com/shop/kitsat/product/955626e5622d5462fc0a2ff58b6cc8fe/
 
 .. image:: images/product.jpg
   :width: 400
