@@ -45,18 +45,18 @@ Pinout
    * - RC
      - 8
      - Reception, UART line
-	 - Unallocated
+     - Unallocated
 
-	 
+
 .. list-table:: User pins, bottom
    :widths: 20 20 40 20
    :header-rows: 1
-   
-* - Pin name
+
+   * - Pin name
      - Pin number
      - Description
      - Pin type or subsystem
-* - GND
+   * - GND
      - 9
      - Ground, power line
      - Power
