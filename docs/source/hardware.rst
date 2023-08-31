@@ -6,8 +6,8 @@ Hardware
 Pinout
 ------
 
-.. list-table:: User pins
-   :widths: 25 25 50
+.. list-table:: User pins, top
+   :widths: 20 20 40 20
    :header-rows: 1
 
    * - Pin name
@@ -21,31 +21,45 @@ Pinout
    * - SDA
      - 2
      - SDA, I2C line
-	 - Sensor suite
+     - Sensor suite
    * - GPIO12
      - 3
      - Digital I/O
-	 - Unallocated digital I/O
+     - Unallocated digital I/O
    * - SCLK
      - 4
      - Clock select, SPI line
-	 - SD Card
+     - SD Card
    * - MISO
      - 5
      - Main input secondary output, SPI line
-	 - SD Card
+     - SD Card
    * - MOSI
      - 6
      - Main output secondary input, SPI line
-	 - SD Card
+     - SD Card
    * - TX
      - 7
      - Transmission, UART line
-	 - Unallocated
+     - Unallocated
    * - RC
-     - 7
+     - 8
      - Reception, UART line
 	 - Unallocated
+
+	 
+.. list-table:: User pins, bottom
+   :widths: 20 20 40 20
+   :header-rows: 1
+   
+* - Pin name
+     - Pin number
+     - Description
+     - Pin type or subsystem
+* - GND
+     - 9
+     - Ground, power line
+     - Power
 
 .. _board_layout:
 

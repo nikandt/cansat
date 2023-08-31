@@ -1,7 +1,8 @@
+.. _software:
+
 Software
 ========
 
-.. _software:
 .. _example_codes:
 
 Example codes
