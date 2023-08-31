@@ -3,7 +3,7 @@
 Getting started
 ===============
 
-.. image:: images/product3.jpg
+.. image:: images/product.jpg
   :width: 400
   :alt: Cansat Kit Promo
 
