@@ -1,8 +1,10 @@
 Software
 ========
 
-.. autosummary::
-   :toctree: generated
+.. _software:
+
+Software
+--------
 
 LED Blink example
 *****************

@@ -19,6 +19,7 @@ Contents
 
    usage
    software
+   hardware
    mechanical
 
 Cansat has its documentation hosted on Read the Docs.

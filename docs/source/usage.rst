@@ -105,7 +105,7 @@ Receiver example
 	}
 
 
-See the Software section for more coding examples.
+See the :ref:`software` section for more coding examples.
 
 
 Trouble with setup? Leave us a message: support@kitsat.fi
