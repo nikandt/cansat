@@ -1,6 +1,7 @@
 Getting started
 ===============
 
+.. _getting_started:
 .. _introduction:
 .. _setup:
 .. _step_by_step_installation:
