@@ -11,11 +11,16 @@ Getting started
 
 The CanSat is a simulated satellite — integrated within the volume and shape of a soft drink can.
 
-The challenge for students is to fit all the major subsystems found in a satellite,
-such as power, sensors and a communication system, into the volume and shape of a soft drink can.
-The CanSat is then launched by a rocket up to an altitude of approximately one kilometre.
-Its mission involves carrying out a scientific experiment and a technology demonstration,
-achieving a safe landing, and analysing the collected data.
+CanSat competitions provide an opportunity for students to design and build a simplified satellite system
+and then test its functionality through a real-world launch scenario.
+
+The primary components of a CanSat generally include a microcontroller, sensors (for measuring parameters like temperature, pressure, etc.), a power supply (usually batteries), and a communication system to send data back to a ground station.
+
+The aim of the CanSat project is to provide a cost-effective platform for students to gain hands-on experience in designing,
+and operating a small-scale satellite-like system. This allows for practical application of concepts from engineering, electronics, while working
+together with their classmates on a fun project.
+
+For more information on CanSat, check out https://cansat.esa.int/ .
 
 .. _setup:
 
