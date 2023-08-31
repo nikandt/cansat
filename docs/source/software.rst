@@ -1,10 +1,10 @@
 Software
 ========
 
-.. _software:
+.. _example_codes:
 
-Software
---------
+Example codes
+-------------
 
 LED Blink example
 *****************

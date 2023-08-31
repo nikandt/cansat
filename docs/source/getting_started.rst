@@ -1,7 +1,6 @@
 Getting started
 ===============
 
-.. _d:
 .. _introduction:
 .. _setup:
 .. _step_by_step_installation:
@@ -14,8 +13,7 @@ Introduction
   :width: 400
   :alt: Cansat Kit Promo
 
-What is Cansat?
-***************
+*What is Cansat?*
 
 The CanSat is a simulated satellite — integrated within the volume and shape of a soft drink can.
 
