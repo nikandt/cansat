@@ -1,7 +1,7 @@
 Welcome to Cansat's documentation!
 ===================================
 
-Check out the :doc:`usage` section for further information, including
+Check out the :doc:`getting_started` section for further information, including
 how to :ref:`setup` the project.
 
 .. note::
