@@ -2,11 +2,6 @@ Getting started
 ===============
 
 .. _getting_started:
-.. _setup:
-	.. _required_software:
-	.. _required_hardware:
-.. _step_by_step_installation:
-.. _example_scripts:
 
 Getting started
 ---------------
@@ -24,6 +19,8 @@ such as power, sensors and a communication system, into the volume and shape of 
 The CanSat is then launched by a rocket up to an altitude of approximately one kilometre.
 Its mission involves carrying out a scientific experiment and a technology demonstration,
 achieving a safe landing, and analysing the collected data.
+
+.. _setup:
 
 Setup
 -----
@@ -47,6 +44,8 @@ The kit includes a CanSat, an antenna, and a ground segment radio for communicat
 * (Optional): `CanSat Perf Board <https://holvi.com/shop/kitsat/product/955626e5622d5462fc0a2ff58b6cc8fe/>`_ for custom payload development
 
 
+.. _step_by_step_installation:
+
 Step-by-step installation
 -------------------------
 
@@ -62,6 +61,8 @@ Step-by-step installation
 
 6. From the top pane, click "Upload" to flash the example code to your Cansat. Your Cansat board LEDs should now be blinking.
 
+
+.. _example_scripts:
 
 Example Scripts
 ---------------
