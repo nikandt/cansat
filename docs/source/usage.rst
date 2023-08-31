@@ -104,7 +104,8 @@ Receiver example
 
 	}
 
-For more examples, refer to https://github.com/nikandt/cansat/tree/main/example%20scripts
+
+See the Software section for more coding examples.
 
 
 Trouble with setup? Leave us a message: support@kitsat.fi
