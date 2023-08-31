@@ -2,19 +2,20 @@ Getting started
 ===============
 
 .. _getting_started:
-.. _introduction:
 .. _setup:
+	.. _required_software:
+	.. _required_hardware:
 .. _step_by_step_installation:
 .. _example_scripts:
 
-Introduction
-------------
+Getting started
+---------------
 
 .. image:: images/product2.jpg
   :width: 400
   :alt: Cansat Kit Promo
 
-*What is Cansat?*
+**What is Cansat?**
 
 The CanSat is a simulated satellite — integrated within the volume and shape of a soft drink can.
 
@@ -31,7 +32,7 @@ Required Software
 *****************
 
 * Arduino IDE: https://www.arduino.cc/en/software
-* ESP32 pack (available from Arduino IDE's Boards Manager)
+* ESP32 pack (available from Arduino IDE's Boards Manager from https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json )
 * CanSat software: https://github.com/nikandt/cansat
 
 Required Hardware
