@@ -13,10 +13,8 @@ The CanSat is a simulated satellite — integrated within the volume and shape o
 
 CanSat competitions provide an opportunity for students to design and build a simplified satellite system
 and then test its functionality through a real-world launch scenario.
-
-The aim of the CanSat project is to provide a cost-effective platform for students to gain hands-on experience in designing,
-and operating a small-scale satellite-like system. This allows for practical application of concepts from engineering, electronics, while working
-together with their classmates on a fun project.
+This allows for practical application of concepts from engineering, electronics, and computer science, while working
+together with classmates on a fun project.
 
 For more information on CanSat, check out https://cansat.esa.int/ .
 
