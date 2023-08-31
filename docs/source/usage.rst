@@ -5,7 +5,6 @@ Usage
 .. _introduction:
 .. _getting_started:
 .. _hardware_interface:
-.. _mechanical_interface:
 .. _example_scripts:
 
 Introduction
@@ -80,14 +79,6 @@ CanSat hardware pinout reference:
 For creating custom breakouts, a board template reference:
 
 .. image:: images/template.png
-  :width: 400
-  :alt: Breakout board template
-  
-  
-Mechanical Interface
----------------------
-  
-.. image:: images/board_dimensions.png
   :width: 400
   :alt: Breakout board template
 
