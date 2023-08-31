@@ -1,11 +1,14 @@
 Hardware
 ========
 
+.. _power:
+
+Power
+-----
+
 During development, the CanSat kit can be powered on with a USB Micro - Type A cable.
 
 During flight, an external power source must be used. Plug in three AAA alkaline batteries to the Cansat's bottom side.
-
-This is handled automatically.
 
 .. _pinout:
 
@@ -100,11 +103,11 @@ Pinout
 Board layout
 ------------
 
-CanSat hardware pinout reference:
+CanSat hardware layout reference:
 
 .. image:: images/cansat.png
   :width: 400
-  :alt: Cansat Pinout
+  :alt: Cansat Layout
 
 For creating custom breakouts, a board template reference:
 
