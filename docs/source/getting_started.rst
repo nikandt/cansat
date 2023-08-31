@@ -1,9 +1,10 @@
-Usage
-=====
+Getting started
+===============
 
+.. _d:
 .. _introduction:
-.. _getting_started:
 .. _setup:
+.. _step_by_step_installation:
 .. _example_scripts:
 
 Introduction
@@ -24,8 +25,8 @@ The CanSat is then launched by a rocket up to an altitude of approximately one k
 Its mission involves carrying out a scientific experiment and a technology demonstration,
 achieving a safe landing, and analysing the collected data.
 
-Getting started
----------------
+Setup
+-----
 
 Required Software
 *****************
@@ -37,21 +38,17 @@ Required Software
 Required Hardware
 *****************
 
-* A CanSat kit: https://holvi.com/shop/kitsat/product/e5b4aa56d0a5ffb5cf3d7b421b7a58cf/
+* [A CanSat kit](https://holvi.com/shop/kitsat/product/e5b4aa56d0a5ffb5cf3d7b421b7a58cf/)
 
 The kit includes a CanSat, an antenna, and a ground segment radio for communication and data gathering.
 
-* (Optional): CanSat GPS Module: https://holvi.com/shop/kitsat/product/99579c7b559989fb4e61bc1e80f83e8b/
+* (Optional): [CanSat GPS Module](https://holvi.com/shop/kitsat/product/99579c7b559989fb4e61bc1e80f83e8b/)
 
-* (Optional): CanSat Perf Board for custom payload development: https://holvi.com/shop/kitsat/product/955626e5622d5462fc0a2ff58b6cc8fe/
-
-.. image:: images/product.jpg
-  :width: 400
-  :alt: Cansat Kit
+* (Optional): [CanSat Perf Board](https://holvi.com/shop/kitsat/product/955626e5622d5462fc0a2ff58b6cc8fe/) for custom payload development
 
 
-Setup
------
+Step-by-step installation
+-------------------------
 
 1. Download the required software (Arduino IDE): https://www.arduino.cc/en/software
 

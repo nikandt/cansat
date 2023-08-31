@@ -17,7 +17,7 @@ Contents
 
 .. toctree::
 
-   usage
+   getting_started
    software
    hardware
    mechanical

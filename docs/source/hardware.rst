@@ -1,11 +1,11 @@
-Hardware interface
-==================
+Hardware
+========
 
-.. _hardware_interface:
+.. _Pinout:
 
 
-Hardware Interface
-------------------
+Pinout
+------
 
 CanSat hardware pinout reference:
 
