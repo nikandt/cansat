@@ -30,7 +30,6 @@ Required Software
 
 * Arduino IDE: https://www.arduino.cc/en/software
 * ESP32 pack (available from Arduino IDE's Boards Manager from https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json )
-* CanSat software: https://github.com/nikandt/cansat
 
 Required Hardware
 *****************
