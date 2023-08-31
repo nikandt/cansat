@@ -10,6 +10,29 @@ During development, the CanSat kit can be powered on with a USB Micro - Type A c
 
 During flight, an external power source must be used. Plug in three AAA alkaline batteries to the Cansat's bottom side.
 
+.. _hardware_interface:
+
+Interface
+---------
+
+CanSat hardware interface
+
+.. image:: images/hw_interface.png
+  :width: 400
+  :alt: Cansat Hardware Interface
+  
+  
+1. User pins, top
+2. User pins, bottom
+3. USB Micro port
+4. Reset Switch
+5. SD Card
+6. Power Switch
+7. Antenna
+8. Thermistor
+9. AAA Battery holder (on the other sade of the board).
+
+
 .. _pinout:
 
 Pinout
