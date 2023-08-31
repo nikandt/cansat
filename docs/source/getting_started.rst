@@ -3,9 +3,6 @@ Getting started
 
 .. _getting_started:
 
-Getting started
----------------
-
 .. image:: images/product2.jpg
   :width: 400
   :alt: Cansat Kit Promo
