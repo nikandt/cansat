@@ -18,8 +18,8 @@ Contents
 .. toctree::
 
    getting_started
-   software
    hardware
+   software
    mechanical
 
 Cansat has its documentation hosted on Read the Docs.
