@@ -30,7 +30,7 @@ CanSat hardware interface
 6. Power Switch
 7. Antenna
 8. Thermistor
-9. AAA Battery holder (on the other sade of the board).
+9. AAA Battery holder (on the backside of the board).
 
 
 .. _pinout:
@@ -132,7 +132,7 @@ CanSat hardware layout reference:
   :width: 400
   :alt: Cansat Layout
 
-For creating custom breakouts, a board template reference:
+For creating custom payloads, a board template reference:
 
 .. image:: images/template.png
   :width: 400
