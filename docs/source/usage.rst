@@ -1,10 +1,9 @@
 Usage
 =====
 
-.. _setup:
 .. _introduction:
 .. _getting_started:
-.. _hardware_interface:
+.. _setup:
 .. _example_scripts:
 
 Introduction
@@ -65,22 +64,6 @@ Setup
 5. From the top pane of Arduino IDE, choose "Select Board". Your Cansat should show up as an ESP32 device.
 
 6. From the top pane, click "Upload" to flash the example code to your Cansat. Your Cansat board LEDs should now be blinking.
-
-
-Hardware Interface
-------------------
-
-CanSat hardware pinout reference:
-
-.. image:: images/cansat.png
-  :width: 400
-  :alt: Cansat Pinout
-
-For creating custom breakouts, a board template reference:
-
-.. image:: images/template.png
-  :width: 400
-  :alt: Breakout board template
 
 
 Example Scripts
