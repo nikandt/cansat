@@ -4,7 +4,8 @@ Usage
 .. _setup:
 .. _introduction:
 .. _getting_started:
-.. _hardware_reference:
+.. _hardware_interface:
+.. _mechanical_interface:
 .. _example_scripts:
 
 Introduction
@@ -61,7 +62,7 @@ Setup
 6. From the top pane, click "Upload" to flash the example code to your Cansat. Your Cansat board LEDs should now be blinking.
 
 
-Hardware Reference
+Hardware Interface
 ------------------
 
 CanSat hardware pinout reference:
@@ -77,7 +78,12 @@ For creating custom breakouts, a board template reference:
   :alt: Breakout board template
   
   
-For enclosures, a frame reference: https://github.com/nikandt/cansat/tree/main/mech
+Mechanical Interface
+---------------------
+  
+.. image:: images/board_dimensions.png
+  :width: 400
+  :alt: Breakout board template
 
 
 Example Scripts
