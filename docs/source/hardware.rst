@@ -38,88 +38,62 @@ CanSat hardware interface
 Pinout
 ------
 
-.. list-table:: User pins, top
-   :widths: 20 20 40 20
-   :header-rows: 1
+Here is the full list of pins used by CanSat NeXT board. The internal use refers to the pin being used for the on-board resources, and extension refers to the pins having been routed to the extension interface. Some pins, those for I2C and SPI, are used both internally and externally. The library name refers to a macro name, which can be used instead of the pin number when CanSatNeXT library has been included.
 
-   * - Pin name
-     - Pin number
-     - Description
-     - Pin type or subsystem
-   * - SCL
-     - 1
-     - SCL, I2C line
-     - Sensor Suite
-   * - SDA
-     - 2
-     - SDA, I2C line
-     - Sensor Suite
-   * - GPIO12
-     - 3
-     - Digital I/O
-     - Unallocated
-   * - SCLK
-     - 4
-     - Clock select, SPI line
-     - SD Card
-   * - MISO
-     - 5
-     - Main input secondary output, SPI line
-     - SD Card
-   * - MOSI
-     - 6
-     - Main output secondary input, SPI line
-     - SD Card
-   * - TX
-     - 7
-     - Transmission, UART line
-     - Unallocated
-   * - RC
-     - 8
-     - Reception, UART line
-     - Unallocated
++-------------+----------------+---------------------------------------------------------+---------------------+
+| Pin Number  | Library name   | Note                                                    | Internal/External   |
++=============+================+=========================================================+=====================+
+| 0           | BOOT           |                                                         | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 1           | USB_UART_TX    | Used for USB                                            | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 3           | USB_UART_RX    | Used for USB                                            | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 4           | SD_CS          | SD card chip select                                     | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 5           | LED            | Can be used to blink on-board LED                       | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 12          | GPIO12         |                                                         | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 13          | MEAS_EN        | Drive high to enable LDR and thermistor                 | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 14          | GPIO14         | Can be used to read if SD-card is in place              | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 15          | GPIO15         |                                                         | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 16          | GPIO16         | UART2 RX                                                | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 17          | GPIO17         | UART2 TX                                                | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 18          | SPI_CLK        | Used by the SD-card, also available externally          | Both                |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 19          | SPI_MISO       | Used by the SD-card, also available externally          | Both                |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 21          | I2C_SDA        | Used by the on-board sensors, also available externally | Both                |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 22          | I2C_SCL        | Used by the on-board sensors, also available externally | Both                |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 23          | SPI_MOSI       | Used by the SD-card, also available externally          | Both                |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 25          | GPIO25         |                                                         | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 26          | GPIO26         |                                                         | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 27          | GPIO27         |                                                         | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 32          | GPIO32         | ADC                                                     | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 33          | GPIO33         | ADC                                                     | Extension interface |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 34          | LDR            | ADC for the on-board LDR                                | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 35          | NTC            | ADC for the thermistor                                  | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 36          | VDD            | ADC used to monitor supply voltage                      | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
+| 39          | BATT           | ADC used to monitor battery voltage                     | Used internally     |
++-------------+----------------+---------------------------------------------------------+---------------------+
 
-
-.. list-table:: User pins, bottom
-   :widths: 20 20 40 20
-   :header-rows: 1
-
-   * - Pin name
-     - Pin number
-     - Description
-     - Pin type or subsystem
-   * - GND
-     - 9
-     - Ground, power line
-     - Power
-   * - +3V3
-     - 10
-     - +3V3, power line
-     - Power
-   * - GPIO14
-     - 11
-     - Digital I/O
-     - Unallocated
-   * - GPIO25
-     - 12
-     - Digital I/O
-     - Unallocated
-   * - GPIO26
-     - 13
-     - Digital I/O
-     - Unallocated
-   * - GPIO27
-     - 14
-     - Digital I/O
-     - Unallocated
-   * - GPIO32
-     - 15
-     - Digital I/O
-     - Unallocated
-   * - GPIO33
-     - 16
-     - Digital I/O
-     - Unallocated
 
 .. _board_layout:
 

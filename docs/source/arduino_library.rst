@@ -3,6 +3,8 @@
 Arduino library
 ===============
 
+The CanSat NeXT Arduino Library is hosted on Github: https://github.com/netnspace/CanSatNeXT_library
+
 .. _example_codes:
 
 Example codes
