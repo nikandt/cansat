@@ -37,32 +37,32 @@ The kit includes a CanSat, an antenna, and a ground segment radio for communicat
 Step-by-step installation
 -------------------------
 
-#. Step 1. Install the Arduino IDE
+1. Install the Arduino IDE
 
 * Download and install the Arduino IDE from the official website if you haven't already: https://www.arduino.cc/en/software
 
-#. Step 2. Install ESP32 Support
+2. Install ESP32 Support
 
 * Open the Arduino IDE.
 * Navigate to Tools->Board->Boards Manager.
 * In the search bar, type in "ESP32" and find the option provided by Espressif.
 * Click "install" to add support to your Arduino IDE.
 
-#. Step 3. Install the CanSat NeXT Library
+3. Install the CanSat NeXT Library
 	
 * In the Arduino IDE, go to Sketch -> Include Library -> Manage Libraries.
 * In the search bar, type "CanSatNeXT" and find the corresponding library.
 * Click "Install" to install the library. If the Arduino IDE asks if you want to install with dependencies - click yes.
 * Alternatively, you can manually add the library by downloading this repository: https://github.com/netnspace/CanSatNeXT_library and saving it into the Arduino libraries folder on your computer.
 
-#. Step 4. Connect the CanSatNeXT Board.
+4. Connect the CanSatNeXT Board.
 
 * Plug the CanSat board to your PC with a USB cable.
 * Your PC should automatically detect the board, but if it doesn't, you may need to install the necessary drivers.
 * Drivers can be found on the Silicon Labs website: https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
 * For additional help with setting up the ESP32, refer to the following tutorial: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/establish-serial-connection.html
 
-#. Step 5. Get Started with the CanSatNeXT Board
+5. Get Started with the CanSatNeXT Board
 
 * Once you have installed the Arduino IDE, ESP32 support, and the CanSatNeXT library (and possibly the drivers), you are ready to start using the board.
 * To explore the use of the various hardware resources, go to File -> Examples -> CanSatNeXT in the Arduino IDE.
