@@ -16,7 +16,6 @@ For more information about CanSat, check out https://cansat.esa.int/ .
   :width: 700
   :alt: Cansat Kit Promo
 
-
 Contents
 --------
 

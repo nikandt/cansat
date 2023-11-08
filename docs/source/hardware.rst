@@ -70,15 +70,6 @@ Here is the full list of pins used by CanSat NeXT board. The internal use refers
 | 39          | BATT           | ADC used to monitor battery voltage                     | Used internally     |
 +-------------+----------------+---------------------------------------------------------+---------------------+
 
-.. _power:
-
-Power
------
-
-During development, the CanSat kit can be powered on with a USB Micro - Type A cable.
-
-During flight, an external power source must be used. Plug in three AAA alkaline batteries to the Cansat's bottom side.
-
 .. _hardware_interface:
 
 Interface
@@ -115,3 +106,13 @@ For creating custom payloads, a board template reference:
 .. image:: images/template.png
   :width: 400
   :alt: Breakout board template
+
+
+.. _power:
+
+Power
+-----
+
+During development, the CanSat kit can be powered on with a USB Micro - Type A cable.
+
+During flight, an external power source must be used. Plug in three AAA alkaline batteries to the Cansat's bottom side.

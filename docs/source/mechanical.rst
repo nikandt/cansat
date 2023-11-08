@@ -1,4 +1,4 @@
-.. _mechanical_interface:
+.. _mechanical_:
 
 Mechanical interface
 ====================
@@ -20,8 +20,6 @@ Board dimensions
 Enclosure
 ---------
 
-A .stl model for 3D printed enclosures:
-
-.. _Download the enclosure: ./mech/cansat.stl
+:download:`A .stl model for 3D printed enclosures <mech/cansat.stl>`:
   
 
