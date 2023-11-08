@@ -1,4 +1,4 @@
-.. _software:
+.. _arduino_library:
 
 Arduino library
 ===============
