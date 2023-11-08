@@ -1,7 +1,7 @@
 .. _software:
 
-Software
-========
+Arduino library
+===============
 
 .. _example_codes:
 

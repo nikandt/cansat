@@ -7,17 +7,6 @@ Getting started
   :width: 400
   :alt: Cansat Kit Promo
 
-**What is Cansat?**
-
-The CanSat is a simulated satellite — integrated within the volume and shape of a soft drink can.
-
-CanSat competitions provide an opportunity for students to design and build a simplified satellite system
-and then test its functionality through a real-world launch scenario.
-This allows for practical application of concepts from engineering, electronics, and computer science, while working
-together with classmates on a fun project.
-
-For more information on CanSat, check out https://cansat.esa.int/ .
-
 .. _setup:
 
 Setup
@@ -27,7 +16,9 @@ Required Software
 *****************
 
 * Arduino IDE: https://www.arduino.cc/en/software
-* ESP32 pack (available from Arduino IDE's Boards Manager from https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json )
+* CanSat NeXT Arduino library: https://github.com/netnspace/CanSatNeXT_library
+* ESP32 support (available from Arduino IDE's Boards Manager from https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json )
+
 
 Required Hardware
 *****************
@@ -46,17 +37,35 @@ The kit includes a CanSat, an antenna, and a ground segment radio for communicat
 Step-by-step installation
 -------------------------
 
-1. Download the required software (Arduino IDE): https://www.arduino.cc/en/software
+#. Step 1. Install the Arduino IDE
 
-2. Open Boards manager from Tools>Board>Board Manager. Type in "esp32" to the search. Install the latest ESP32 Boards package provided by Arduino.
+	* Download and install the Arduino IDE from the official website if you haven't already: https://www.arduino.cc/en/software
 
-3. Copy Cansat example scripts from https://github.com/nikandt/cansat/tree/main/example%20scripts to your PC.
+#. Step 2. Install ESP32 Support
 
-4. Connect CanSat to your PC with a USB cable and open the led_blink/led_blink.ino file from example scripts with Arduino IDE.
+	* Open the Arduino IDE.
+	* Navigate to Tools->Board->Boards Manager.
+	* In the search bar, type in "ESP32" and find the option provided by Espressif.
+	* Click "install" to add support to your Arduino IDE.
 
-5. From the top pane of Arduino IDE, choose "Select Board". Your Cansat should show up as an ESP32 device.
+#. Step 3. Install the CanSat NeXT Library
+	
+	* In the Arduino IDE, go to Sketch -> Include Library -> Manage Libraries.
+	* In the search bar, type "CanSatNeXT" and find the corresponding library.
+	* Click "Install" to install the library. If the Arduino IDE asks if you want to install with dependencies - click yes.
+	* Alternatively, you can manually add the library by downloading this repository: https://github.com/netnspace/CanSatNeXT_library and saving it into the Arduino libraries folder on your computer.
 
-6. From the top pane, click "Upload" to flash the example code to your Cansat. Your Cansat board LEDs should now be blinking.
+#. Step 4. Connect the CanSatNeXT Board.
+
+	* Plug the CanSat board to your PC with a USB cable.
+	* Your PC should automatically detect the board, but if it doesn't, you may need to install the necessary drivers.
+	* Drivers can be found on the Silicon Labs website: https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
+	* For additional help with setting up the ESP32, refer to the following tutorial: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/establish-serial-connection.html
+
+#. Step 5. Get Started with the CanSatNeXT Board
+
+	* Once you have installed the Arduino IDE, ESP32 support, and the CanSatNeXT library (and possibly the drivers), you are ready to start using the board.
+	* To explore the use of the various hardware resources, go to File -> Examples -> CanSatNeXT in the Arduino IDE.
 
 
 .. _example_scripts:
@@ -69,38 +78,33 @@ Receiver example
 
 .. code-block:: C++
 
-	#include <esp_now.h>
-	#include "esp_wifi.h"
-	#include <WiFi.h>
+	/*
+	  This example shows the most basic things - print a message and blink the on-board LED.
 
-	uint8_t groundsationMAC[] = {0xD4, 0xD4, 0xDA, 0x5A, 0x5A, 0x74};
+	  If this doesn't work, it is most likely caused by one of these things
+	  1. The computer doesn't detect the device - check that the driver is installed
+	  2. Arduino doesn't have ESP32 installed. Install boards manager - esp32 by espressif, select ESP32 Dev Module
+	*/
+	// Include the CanSatNeXT library
+	#include "CanSatNeXT.h"
 
-	void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
-	  Serial.write(incomingData, len);
-	}
-	 
 	void setup() {
-	  Serial.begin(921600);
-	  WiFi.mode(WIFI_STA);
-	  esp_wifi_set_mac(WIFI_IF_STA, &groundsationMAC[0]);
-
-	  if (esp_now_init() != ESP_OK) {
-		Serial.println("Error initializing ESP-NOW");
-		return;
-	  }
-	  Serial.println("CANSAT GS Starting");
-	  Serial.print("This GS MAC Address: ");
-	  Serial.println(WiFi.macAddress());
-	  esp_wifi_set_protocol( WIFI_IF_STA , WIFI_PROTOCOL_LR);   
-	  esp_now_register_recv_cb(OnDataRecv);
+	  // Start the serial line to print data to the terminal
+	  Serial.begin(115200);
+	  // Start all CanSatNeXT on-board systems.
+	  CanSatInit();
 	}
-	 
+
 	void loop() {
-
+	  // Let's blink the LED
+	  digitalWrite(LED, HIGH);
+	  delay(100);
+	  digitalWrite(LED, LOW);
+	  delay(400);
+	  Serial.println("This is a message!");
 	}
 
+See the :ref:`arduino_library` section for more coding examples.
 
-See the :ref:`software` section for more coding examples.
 
-
-Trouble with setup? Leave us a message: support@kitsat.fi
+Trouble with setup? Leave us a message: hello@cansat.fi
