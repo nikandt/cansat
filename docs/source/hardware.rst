@@ -3,8 +3,6 @@ Hardware
 
 The hardware resources include a barometer, an inertial measurement unit, an SD card and a point-to-point communication radio. 
 
-.. _pinout:
-
 The picture below shows the pins for using the extension header for adding external electronics to the board.
 
 .. image:: images/pinoutv1.png
