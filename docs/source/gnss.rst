@@ -8,10 +8,10 @@ https://github.com/netnspace/CanSatNeXT_GNSS
 
 This library extends CanSat NeXT to add support for the GNSS board. This library prioritizes ease-of-use, and only has basic functionalities such as getting location and time from the GNSS. For users looking for more advanced GNSS features, the excellent SparkFun_u-blox_GNSS_Arduino_Library might be a better choice. This library is actually just a wrapper for that library, just making all configurations with CanSat operations in mind.
 
-.. _installation:
+.. _gnss_installation:
 
-Installation
-------------
+GNSS Library Installation
+-------------------------
 
 1. Install the Arduino IDE
 
@@ -41,10 +41,10 @@ Installation
 
 * Check examples for how to read the location, go to File -> Examples -> CanSatNeXT_GPS in the Arduino IDE.
 
-.. _example_codes:
+.. _gnss_example_codes:
 
-Example codes
--------------
+GNSS Module Example codes
+-------------------------
 
 To explore the use of the various hardware resources, go to File -> Examples -> CanSatNeXT_GNSS in the Arduino IDE.
 
