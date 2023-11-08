@@ -20,6 +20,6 @@ Board dimensions
 Enclosure
 ---------
 
-:download:`A .stl model for 3D printed enclosures <mech/cansat.stl>`:
+:download:`Click here <mech/cansat.stl>` to download an .stl model for 3D printed enclosures.
   
 
