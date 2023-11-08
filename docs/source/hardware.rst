@@ -1,37 +1,15 @@
 Hardware
 ========
 
-.. _power:
+The hardware resources include a barometer, an inertial measurement unit, an SD card and a point-to-point communication radio. 
 
-Power
------
+.. _pinout:
 
-During development, the CanSat kit can be powered on with a USB Micro - Type A cable.
+The picture below shows the pins for using the extension header for adding external electronics to the board.
 
-During flight, an external power source must be used. Plug in three AAA alkaline batteries to the Cansat's bottom side.
-
-.. _hardware_interface:
-
-Interface
----------
-
-CanSat hardware interface
-
-.. image:: images/hw_interface.png
+.. image:: images/pinoutv1.png
   :width: 400
-  :alt: Cansat Hardware Interface
-  
-  
-1. User pins, top
-2. User pins, bottom
-3. USB Micro port
-4. Reset Switch
-5. SD Card
-6. Power Switch
-7. Antenna
-8. Thermistor
-9. AAA Battery holder (on the backside of the board).
-
+  :alt: Cansat Pinout
 
 .. _pinout:
 
@@ -94,11 +72,41 @@ Here is the full list of pins used by CanSat NeXT board. The internal use refers
 | 39          | BATT           | ADC used to monitor battery voltage                     | Used internally     |
 +-------------+----------------+---------------------------------------------------------+---------------------+
 
+.. _power:
+
+Power
+-----
+
+During development, the CanSat kit can be powered on with a USB Micro - Type A cable.
+
+During flight, an external power source must be used. Plug in three AAA alkaline batteries to the Cansat's bottom side.
+
+.. _hardware_interface:
+
+Interface
+---------
+
+CanSat hardware interface
+
+.. image:: images/hw_interface.png
+  :width: 400
+  :alt: Cansat Hardware Interface
+  
+  
+1. User pins, top
+2. User pins, bottom
+3. USB Micro port
+4. Reset Switch
+5. SD Card
+6. Power Switch
+7. Antenna
+8. Thermistor
+9. AAA Battery holder (on the backside of the board).
 
 .. _board_layout:
 
-Board layout
-------------
+Board layout render
+--------------------
 
 CanSat hardware layout reference:
 

@@ -3,6 +3,8 @@
 Arduino library
 ===============
 
+This library provides easy access to the hardware resources of the CanSat NeXT board. The library supports both the satellite and the receiver radio.
+
 The CanSat NeXT Arduino Library is hosted on Github: https://github.com/netnspace/CanSatNeXT_library
 
 .. _example_codes:

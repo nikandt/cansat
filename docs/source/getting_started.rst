@@ -5,7 +5,7 @@ Getting started
 
 .. image:: images/pinoutv1.png
   :width: 400
-  :alt: Cansat Kit Promo
+  :alt: Cansat Pinout
 
 .. _setup:
 
