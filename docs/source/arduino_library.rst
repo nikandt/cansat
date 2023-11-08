@@ -7,159 +7,142 @@ This library provides easy access to the hardware resources of the CanSat NeXT b
 
 The CanSat NeXT Arduino Library is hosted on Github: https://github.com/netnspace/CanSatNeXT_library
 
+.. _installation:
+
+Installation
+------------
+
+1. Install the Arduino IDE
+
+* Download and install the Arduino IDE from the official website if you haven’t already: https://www.arduino.cc/en/software
+
+2. Install ESP32 Support
+
+* Open the Arduino IDE.
+* Navigate to Tools->Board->Boards Manager.
+* In the search bar, type in "ESP32" and find the option provided by Espressif.
+* Click "install" to add support to your Arduino IDE.
+
+3. Install the CanSat NeXT Library
+	
+* In the Arduino IDE, go to Sketch -> Include Library -> Manage Libraries.
+* In the search bar, type "CanSatNeXT" and find the corresponding library.
+* Click "Install" to install the library. If the Arduino IDE asks if you want to install with dependencies - click yes.
+* Alternatively, you can manually add the library by downloading this repository: https://github.com/netnspace/CanSatNeXT_library and saving it into the Arduino libraries folder on your computer.
+
+
 .. _example_codes:
 
 Example codes
 -------------
 
-LED Blink example
+To explore the use of the various hardware resources, go to File -> Examples -> CanSatNeXT in the Arduino IDE.
+
+See also CanSat GNSS library for use of the CanSat NeXT GPS module: https://github.com/netnspace/CanSatNeXT_GNSS
+
+Send data example
 *****************
 
 .. code-block:: C++
 
-	const int ledPin = 5;
+	/*
+	  This example shows how data can be sent from the satellite to the groundstation. The same functions work the other way around as well, and can be used to send data to the satellite from the groundstation.
+
+	  Caution - You should always have an antenna in a radio system before transmitting anything. Make sure the antenna is plugged in before sending data via the radio.
+	*/
+
+	#include "CanSatNeXT.h"
+
+	// This is the address of the groundstation we will send data to.
+	uint8_t groundsationMAC[] = {0xA8, 0x42, 0xE3, 0xDA, 0x86, 0x48};
 
 	void setup() {
-	  // put your setup code here, to run once:
-	  pinMode(ledPin, OUTPUT);
+
+	  // Initialize serial with baud rate 115200
 	  Serial.begin(115200);
+
+	  // Initialize CanSatNeXT systems. Calling this function with the MAC address as a parameter enables the radio.
+	  CanSatInit(groundsationMAC);
 	}
 
 	void loop() {
-	  // put your main code here, to run repeatedly:
-	  digitalWrite(ledPin, HIGH);
-	  delay(50);
-	  digitalWrite(ledPin, LOW);
-	  delay(950);
+	  
+	  // Let's use a random number to mock a sensor
+	  uint8_t value = random(255);
+
+	  // The data can be sent either as a string or as binary data.
+
+	  // Send a simple message
+	  sendData("This is our message.");
+
+	  // To send a variable, we need to convert it into a string
+	  sendData(String(value));
+
+	  // Alternatively, we can send the value as binary data. This is more efficient, but can be tricky.
+	  char msg[1];
+	  msg[0] = value;
+	  sendData(msg, sizeof(msg));
+	  
+	  
+	  delay(1000);
 	}
 
 
-LDR Test Example
-****************
+External SPI example
+********************
 
 .. code-block:: C++
 
-	#include "CanSatPins.h"
+	/*
+	  This example shows how to use the SPI from the extension header to connect to an
+	  external SPI device. Essentially, it is used just like normally. The pins just
+	  need to be modified based on the hardware setup. This example uses an external
+	  analog-to-digital converter MCP3008, but the same approach works for any other SPI
+	  device as well. This example uses Adafruit MCP3008 library to communicate with the MCP3008.
+	  The code is modified from the Adafruit example provided with the library.
+	*/
+
+	#include <Adafruit_MCP3008.h>
+
+	// Include CanSatNeXT to get the pin definitions
+	#include <CanSatNeXT.h>
+
+	Adafruit_MCP3008 adc;
+
+	int count = 0;
+
 
 	void setup() {
-	  // Start the serial communication
 	  Serial.begin(9600);
+	  while (!Serial);
 
-	  // Set the MEAS_EN pin as output
-	  pinMode(MEAS_EN, OUTPUT);
+	  Serial.println("MCP3008 simple test.");
 
-	  // Set the MEAS_EN pin to HIGH, enabling the LDR
-	  digitalWrite(MEAS_EN, HIGH);
+	  // Hardware SPI (specify CS, use any available digital)
+	  // Can use defaults if available, ex: UNO (SS=10) or Huzzah (SS=15)
+	  
+	 /* *'''''''''''''''''
+	 This is the only modification to the library example
+	 */
+	  // Use SPI pins. Chip select can be any GPIO pin, this time we use pin 12.
+	  adc.begin(SPI_CLK, SPI_MOSI, SPI_MISO, 12);
+	// ^^^^^^^^^^^^^^
 
-	  // The LDR is an analog sensor, so we don't need to set its pin mode
+	  // Feather 32u4 (SS=17) or M0 (SS=16), defaults SS not broken out, must specify
+	  //adc.begin(10);  
+
+	  // Software SPI (specify all, use any available digital)
+	  // (sck, mosi, miso, cs);
+	  //adc.begin(13, 11, 12, 10);
 	}
 
+
 	void loop() {
-	  // Read the value from the LDR
-	  int ldrValue = analogRead(LDR);
+	  for (int chan=0; chan<8; chan++) {
+		Serial.print(adc.readADC(chan)); Serial.print("\t");
+	  }
+	  Serial.print("["); Serial.print(count); Serial.println("]");
+	  count++;
 	  
-	  // Print the value to the serial monitor
-	  Serial.print("LDR Value: ");
-	  Serial.println(ldrValue);
-	  
-	  // Delay for a while before the next reading
 	  delay(100);
 	}
-
-
-Sensor suite test
-*****************
-
-.. code-block:: C++
-
-	#include "CanSat.h"
-	#include <esp_now.h>
-	#include "esp_wifi.h"
-	#include <WiFi.h>
-
-	uint32_t lastMessage = 0;
-	uint32_t lastBlink = 0;
-	#define MESSAGE_INTERVAL 100
-	#define BLINK_INTERVAL 400
-	#define BLINK_DURATION 100
-
-
-	void ErrorLoop(String message);
-
-	// Replace with your ground station MAC Address
-	char groundsationMAC[] = {0xD4, 0xD4, 0xDA, 0x5A, 0x5A, 0x74};
-
-	void setup() {
-	  pinMode(LED, OUTPUT);
-	  
-	  // Set the MEAS_EN pin as output
-	  pinMode(MEAS_EN, OUTPUT);
-	  digitalWrite(MEAS_EN, LOW);
-	  
-	  uint8_t err = CanSatInit(groundsationMAC);
-	  if(err)
-	  {
-		Serial.print("ERROR: ");
-		Serial.println(err);
-		ErrorLoop("Error in CanSat init");
-	  }
-	}
-
-
-
-
-	void loop() {
-
-	  if(lastMessage + MESSAGE_INTERVAL <= millis())
-	  {
-		lastMessage = millis();
-
-		//read IMU data
-		struct IMUData imudata = ReadIMU();
-		printIMUData(imudata);
-
-		// read LDR
-		digitalWrite(MEAS_EN, HIGH);
-		uint16_t ldr_value = analogRead(LDR);
-		digitalWrite(MEAS_EN, LOW);
-
-		// read ENV data
-		struct ENVData envdata = ReadENV();
-		printENVData(envdata);
-
-		// make a String from the data
-		char msg[128];
-		memset(msg, 0, sizeof(msg));
-		snprintf(msg, sizeof(msg), "T: %.2f C, Pressure %.2f hPa, A: %.2f %.2f %.2f  G: %.2f %.2f %.2f, LDR: %d \r\n",
-		envdata.temperature, envdata.pressure, imudata.accelX, imudata.accelY, imudata.accelZ, imudata.gyroX, imudata.gyroY, imudata.gyroZ, ldr_value);
-	  
-		SendData(msg, strlen(msg));
-	  }
-
-	  if(lastBlink + BLINK_DURATION >= millis())
-	  {
-		digitalWrite(LED, HIGH);
-	  }else{
-		digitalWrite(LED, LOW);
-	  }
-	  if(lastBlink + BLINK_INTERVAL <= millis())
-	  {
-		lastBlink = millis();
-	  }
-	}
-
-
-	void ErrorLoop(String message)
-	{
-	  int LED_status = 0;
-	  while(1)
-	  {
-		Serial.println(message);
-		digitalWrite(LED, LED_status);
-		LED_status = !LED_status;
-		delay(2000);
-	  }
-	}
-
-
-For all code examples, see https://github.com/nikandt/cansat/tree/main/example%20scripts .

@@ -33,5 +33,6 @@ Contents
    arduino_library
    hardware
    mechanical
+   gnss
 
 Cansat has its documentation hosted on Read the Docs.

@@ -29,6 +29,8 @@ The kit includes a CanSat, an antenna, and a ground segment radio for communicat
 
 * (Optional): `CanSat GPS Module <https://holvi.com/shop/kitsat/product/99579c7b559989fb4e61bc1e80f83e8b/>`_
 
+https://github.com/netnspace/CanSatNeXT_GNSS
+
 * (Optional): `CanSat Perf Board <https://holvi.com/shop/kitsat/product/955626e5622d5462fc0a2ff58b6cc8fe/>`_ for custom payload development
 
 
@@ -73,8 +75,8 @@ Step-by-step installation
 Example Scripts
 ---------------
 
-Hello world
-***********
+LED Blink Example
+*****************
 
 .. code-block:: C++
 
