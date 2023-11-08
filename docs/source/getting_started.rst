@@ -3,7 +3,7 @@
 Getting started
 ===============
 
-.. image:: images/product.jpg
+.. image:: images/pinoutv1.png
   :width: 400
   :alt: Cansat Kit Promo
 
