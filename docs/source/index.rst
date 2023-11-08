@@ -1,19 +1,12 @@
 Welcome to Cansat's documentation!
 ===================================
 
+CanSat NeXT is an ESP32 development board developed for CanSat competitions in collaboration with ESERO Finland. 
+
 Check out the :doc:`getting_started` section for further information, including
 how to :ref:`setup` the project.
    
-**What is Cansat?**
-
-The CanSat is a simulated satellite — integrated within the volume and shape of a soft drink can.
-
-CanSat competitions provide an opportunity for students to design and build a simplified satellite system
-and then test its functionality through a real-world launch scenario.
-This allows for practical application of concepts from engineering, electronics, and computer science, while working
-together with classmates on a fun project.
-
-For more information on CanSat, check out https://cansat.esa.int/ .
+For more information about CanSat, check out https://cansat.esa.int/ .
 
 .. note::
 
