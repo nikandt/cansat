@@ -84,8 +84,6 @@ During flight, an external power source must be used. Plug in three AAA alkaline
 Interface
 ---------
 
-CanSat hardware interface
-
 .. image:: images/hw_interface.png
   :width: 400
   :alt: Cansat Hardware Interface
