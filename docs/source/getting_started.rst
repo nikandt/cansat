@@ -3,6 +3,10 @@
 Getting started
 ===============
 
+.. warning::
+
+   This documentation is **deprecated**. For newest CanSat NeXT documentation, see https://www.cansat.fi/docs/landing .
+
 .. image:: images/pinoutv1.png
   :width: 400
   :alt: Cansat Pinout
