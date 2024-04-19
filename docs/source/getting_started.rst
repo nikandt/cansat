@@ -31,11 +31,11 @@ Required Hardware
 
 The kit includes a CanSat, an antenna, and a ground segment radio for communication and data gathering.
 
-* (Optional): `CanSat GPS Module <https://holvi.com/shop/kitsat/product/99579c7b559989fb4e61bc1e80f83e8b/>`_
+* (Optional): `CanSat GPS Module <https://spacelabnextdoor.com/electronics/21-cansat-next-gnss/>`_
 
 https://github.com/netnspace/CanSatNeXT_GNSS
 
-* (Optional): `CanSat Perf Board <https://holvi.com/shop/kitsat/product/955626e5622d5462fc0a2ff58b6cc8fe/>`_ for custom payload development
+* (Optional): `CanSat Perf Board <https://spacelabnextdoor.com/electronics/24-cansat-next-perf>`_ for custom payload development
 
 
 .. _step_by_step_installation:
