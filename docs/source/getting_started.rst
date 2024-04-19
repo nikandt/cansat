@@ -27,7 +27,7 @@ Required Software
 Required Hardware
 *****************
 
-* `CanSat Kit <https://holvi.com/shop/kitsat/product/e5b4aa56d0a5ffb5cf3d7b421b7a58cf/>`_
+* `CanSat Kit <https://spacelabnextdoor.com/electronics/20-cansat-next>`_
 
 The kit includes a CanSat, an antenna, and a ground segment radio for communication and data gathering.
 
